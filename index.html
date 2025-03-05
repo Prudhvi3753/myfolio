@@ -12,7 +12,7 @@
         <div class="container">
             <nav>
                 <img src="images/logo.png" alt="logo" class="logo">
-                <ul>
+                <ul id="sidemenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#project">Projects</a></li>
@@ -35,7 +35,7 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Hello, I'm Prudhvi, a passionate programmer with experience in C++, Java, Web Development, and Database Management. I enjoy solving complex problems and building user-friendly applications. My current journey involves exploring web technologies and enhancing my skills in full-stack development.
+                    <p>Hello, I'm Prudhvi, a passionate programmer with experience in  Java, Web Development. I enjoy solving complex problems and building user-friendly applications. My current journey involves exploring web technologies and enhancing my skills in full-stack development.
 
                         I believe in writing clean, efficient code and continuously learning to stay updated with the latest technologies.</p>
                     <div class="tab-titles">
@@ -46,23 +46,22 @@
                     </div>
                     <div class="tab-contents active-tab" id="skills">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing web interfaces</li>
-                            <li><span>web</span><br>Designing web interfaces</li>
-                            <li><span>UI?UX</span><br>Designing web interfaces</li>
+                            <li><span>Web Development</span><br> Building websites</li>
+                            <li><span>Programming</span><br>Java and Python</li>
+                            <li><span>Editing</span><br>Content creation</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="experience">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing web interfaces</li>
-                            <li><span>web</span><br>Designing web</li>
-                            <li><span>UI?UX</span><br>Designing web</li>
+                            <li><span>Web</span><br>Designed portfolio and other websites</li>
+                            
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
-                            <li><span>UI/UX</span><br>Designing</li>
-                            <li><span>web</span><br>Designing</li>
-                            <li><span>UI?UX</span><br>Designing</li>
+                            <li><span>2022-2026</span><br>BE at Saveetha School of Engineering</li>
+                            <li><span>2020-2022</span><br>Narayana Junior College</li>
+                            <li><span>2010-2020</span><br>Globus High School</li>
                         </ul>
                     </div>
                 </div>
@@ -75,20 +74,20 @@
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-address-card"></i>
-                    <h2>Web Design</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus ullam possimus numquam vel architecto voluptate totam vitae eos optio, nam sit iste, voluptatum maiores asperiores, culpa commodi cumque nisi!</p>
+                    <h2>Portfolio</h2>
+                    <p>I have designed a portfolio using Html,css and javascript</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-plug-circle-bolt"></i>
-                    <h2>Java</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus ullam possimus numquam vel architecto voluptate totam vitae eos optio, nam sit iste, voluptatum maiores asperiores, culpa commodi cumque nisi!</p>
+                    <h2>Power Prediction</h2>
+                    <p>Designed a machine Learning technique to predict the power consumption</p>
                     <a href="#">Learn more</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-dumbbell"></i>
-                    <h2>machine</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus ullam possimus numquam vel architecto voluptate totam vitae eos optio, nam sit iste, voluptatum maiores asperiores, culpa commodi cumque nisi!</p>
+                    <h2>Calories Burnt Prediction</h2>
+                    <p>An ongoing project using ML algorithms and python</p>
                     <a href="#">Learn more</a>
                 </div>
             </div>
@@ -102,19 +101,20 @@
                     <p><i class="fa-solid fa-share"></i>prudhvich45@gmail.com</p>
                     <p><i class="fa-solid fa-phone-volume"></i>9542650478</p>
                     <div class="social-icons">
-                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
-                        <a href=""><i class="fa-brands fa-github"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/prudhvi-ch-21a9b71b6/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/Prudhvi3753"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.instagram.com/ch_prudhvi_07/"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <a href="images/IMG_20230414_231926.jpg" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
-                    <form>
+                    <form name="submit-to-google-sheet">
                         <input type="text" name="Name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your message"></textarea>
                         <button type="submit" class="btn btn2">Submit</button>
                     </form>
+                    <span id="message"></span>
                 </div>
             </div>
         </div>
@@ -139,15 +139,32 @@
         }
     </script>
     <script>
-        var sidemenu = document.getElementById("sidemenu");
+        var sidemeu = document.getElementById("sidemenu");
 
         function openmenu(){
-            sidemenu.style.right = "0";
+            sidemeu.style.right = "0";
         }
 
         function closemenu(){
-            sidemenu.style.right = "-200";
+            sidemeu.style.right = "-200px";
         }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbzYgzZMaeZ0RdXAuNpdIWUBX73ZBBS6KzSDVVC5HPM2jkre0uUDkSc84NaA1uh-2emn7Q/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("message")
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                },1000)
+                form.reset()
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
     </script>
 </body>
 </html>
