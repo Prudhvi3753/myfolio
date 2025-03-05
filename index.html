@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prudhvi Portfolio website</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" >
 </head>
 <body>
     <div id="header">
@@ -14,7 +15,6 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
                     <li><a href="#">Projects</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -33,14 +33,106 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-title">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus similique sit nisi explicabo enim rerum magnam dolorum, itaque eaque tenetur! Molestias quas tempora aspernatur, dolor id delectus est! Quasi, sequi!
-                    Quas, unde. Nulla voluptate dolores pariatur similique est laborum optio numquam natus autem vel magni nihil incidunt excepturi aspernatur voluptas perferendis quis dolore, alias explicabo? Ipsa corrupti reiciendis iste aperiam!
-                    Ad reiciendis sunt qui officiis velit dolorem magni. Vitae officiis doloribus nobis nemo incidunt obcaecati unde voluptatum ab ut. Commodi vel ipsa consequuntur. Natus odit dicta eum soluta exercitationem placeat.
-                    Ducimus, dignissimos nihil, atque rerum ex tempore id et voluptatem dolores dolorem dolor sit ea cum accusantium officiis corrupti ut sequi cumque quidem odio vero perspiciatis! Laborum in libero recusandae!
-                    Dolores quod molestiae, nisi ex blanditiis sint cum iste optio, quae eligendi natus obcaecati veniam animi exercitationem. Amet iste corporis expedita suscipit, saepe accusamus deleniti minus a, facilis ducimus molestiae?</p>
+                    <p>Hello, I'm Prudhvi, a passionate programmer with experience in C++, Java, Web Development, and Database Management. I enjoy solving complex problems and building user-friendly applications. My current journey involves exploring web technologies and enhancing my skills in full-stack development.
+
+                        I believe in writing clean, efficient code and continuously learning to stay updated with the latest technologies.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>web</span><br>Designing web interfaces</li>
+                            <li><span>UI?UX</span><br>Designing web interfaces</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing web interfaces</li>
+                            <li><span>web</span><br>Designing web</li>
+                            <li><span>UI?UX</span><br>Designing web</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing</li>
+                            <li><span>web</span><br>Designing</li>
+                            <li><span>UI?UX</span><br>Designing</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Projects</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-address-card"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus ullam possimus numquam vel architecto voluptate totam vitae eos optio, nam sit iste, voluptatum maiores asperiores, culpa commodi cumque nisi!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-plug-circle-bolt"></i>
+                    <h2>Java</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus ullam possimus numquam vel architecto voluptate totam vitae eos optio, nam sit iste, voluptatum maiores asperiores, culpa commodi cumque nisi!</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-dumbbell"></i>
+                    <h2>machine</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum temporibus ullam possimus numquam vel architecto voluptate totam vitae eos optio, nam sit iste, voluptatum maiores asperiores, culpa commodi cumque nisi!</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-share"></i>prudhvich45@gmail.com</p>
+                    <p><i class="fa-solid fa-phone-volume"></i>9542650478</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-github"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <a href="images/IMG_20230414_231926.jpg" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+        
+    </script>
 </body>
 </html>
