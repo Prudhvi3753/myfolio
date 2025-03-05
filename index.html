@@ -13,11 +13,13 @@
             <nav>
                 <img src="images/logo.png" alt="logo" class="logo">
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
             </nav>
             <div class="header-text">
                 <p>Web Developer</p>
@@ -67,7 +69,7 @@
             </div>
         </div>
     </div>
-    <div id="services">
+    <div id="project">
         <div class="container">
             <h1 class="sub-title">My Projects</h1>
             <div class="services-list">
@@ -116,6 +118,9 @@
                 </div>
             </div>
         </div>
+        <div class="copyright">
+            <p>@2025 All rights reserved</p>
+        </div>
     </div>
     <script>
         var tablinks = document.getElementsByClassName("tab-links")
@@ -132,7 +137,17 @@
             event.currentTarget.classList.add("active-link");
             document.getElementById(tabname).classList.add("active-tab");
         }
-        
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200";
+        }
     </script>
 </body>
 </html>
